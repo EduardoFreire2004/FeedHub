@@ -15,21 +15,26 @@
     <title>FeedHub</title>
 </head>
 
-<body style="color: rgb(148, 148, 148);">
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper blue">
-                <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img><a
-                    href="../Image/Logo.png" class="brand-logo center "></a>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="Conta.html">Conta</a></li>
-                    <li><a href="ContaLoja.html">Conta Loja</a></li>
-                    <li><a href="Index.html">Lojas</a></li>
-                </ul>
-            </div>
-    </div>
+<body class="#eeeeee grey lighten-3">
+
+    <nav class="#0d47a1 blue darken-4">                 
+        <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img>
     </nav>
 
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="../Image/loja.webp">
+                </div>
+                <a href="#user"><img class="circle" src="../Image/usuario.avif"></a>
+                <a href="#name"><span class="white-text name">Neymar</span></a>
+                <a href="#email"><span class="white-text email">neymar@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="../VIEW/Index.html"><i class="material-icons">store</i>Lojas</a></li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger" ><i class="material-icons medium ">menu</i></a>
     <br>
 
     <div class=" row container">
@@ -141,17 +146,25 @@
     </div>
 
 
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Avaliar</a>
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="confirmModalLabel">Confirmação</h5>
+                    <span aria-hidden="true">&times;</span>
+                </div>
 
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal">
-        <div class="modal-content">
-            <h4>Faça seu comentário</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Confirmar</a>
+                <div class="modal-body">
+                    <p>O lead foi enviado?</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="button" id="confirmSave" class="btn btn-primary">Sim</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -172,3 +185,15 @@
 </footer>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize sidenav
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+
+        // Initialize collapsible
+        var collapsibleElems = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(collapsibleElems);
+    });
+</script>
