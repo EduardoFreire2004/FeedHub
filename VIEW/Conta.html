@@ -9,92 +9,115 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- jQuery first, then Bootstrap JS. -->
-    
+
 
     <title>FeedHub</title>
 </head>
 
-<body style="color: rgb(148, 148, 148);">
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper blue">
-                <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="Conta.html">Conta</a></li>
-                    <li><a href="ContaLoja.html">Conta Loja</a></li>
-                    <li><a href="Index.html">Lojas</a></li>
-                </ul>
+<nav class="#0d47a1 blue darken-4">
+    <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img>
+
+</nav>
+
+<ul id="slide-out" class="sidenav   grey lighten-5">
+    <li>
+        <div class="user-view">
+            <div class="background #0d47a1 blue darken-4">
             </div>
-        </nav>
-    </div>
+            <a href="#user"><img class="circle" src="../Image/usuario.avif"></a>
+            <a href="#name"><span class="white-text name">Neymar</span></a>
+            <a href="#email"><span class="white-text email">neymar@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="../VIEW/Conta.html"><i class="material-icons">person</i>Conta</a></li>
+    <li><a href="../VIEW/Index.html"><i class="material-icons">store</i>Lojas</a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons medium ">menu</i></a>
+<br>
 
-    <br>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize sidenav
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
 
+        // Initialize collapsible
+        var collapsibleElems = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(collapsibleElems);
+    });
+</script>
 
-    <div class="row">
-
-        <div class="row">
-            <div class="col s12 m6">
-              <div class="card">
-                <div class="card-image">
-                  <img src="../Image/usuario.avif">
-                  <span class="card-title " style="color: black;">Adicionar Foto de Perfil</span>
-                  <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                    class="material-icons">add</i></a>
-
-                </div>
-              </div>
-            </div>
-          </div>
-
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    <input  id="first_name" type="text" class="validate">
-                    <label for="first_name">Nome</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Sobrenome</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Senha</label>
-                </div>
-                <div class="input-field col s12">
-                    <input id="password" type="password" class="validate">
-                    <label for="password">Confirmar Senha</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s6">
-                    <input  id="cidade" type="text" class="validate">
-                    <label for="cidade">Cidade</label>
-                </div>
-                <div class="input-field col s6">
-                    <input id="estado" type="text" class="validate">
-                    <label for="estado">Estado</label>
-                </div>
-            </div>
-        </form>
-    </div>
-
-</body>
-
-<footer class="page-footer blue">
-    <div class="footer-copyright">
+<body class="#f5f5f5 grey lighten-4">
+<div class="container center-align">
         <div class="container">
-            ©Copyright FeedHub - 2024
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../Image/usuario.avif" alt="Foto do Usuário">
+                            <span class="card-title black-text">Adicionar Foto de Perfil</span>
+                            <a class="btn-floating halfway-fab waves-effect waves-light red"><i
+                                    class="material-icons">add</i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="first_name" type="text" class="validate">
+                        <label for="first_name">Nome</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="last_name" type="text" class="validate">
+                        <label for="last_name">Sobrenome</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password">Senha</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="confirm_password" type="password" class="validate">
+                        <label for="confirm_password">Confirmar Senha</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">location_city</i>
+                        <input id="cidade" type="text" class="validate">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">map</i>
+                        <input id="estado" type="text" class="validate">
+                        <label for="estado">Estado</label>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-</footer>
+
+        <footer class="page-footer #0d47a1 blue darken-4">
+            <div class="footer-copyright">
+                <div class="container">
+                    ©Copyright FeedHub - 2024
+                </div>
+            </div>
+        </footer>
+</body>
 
 </html>

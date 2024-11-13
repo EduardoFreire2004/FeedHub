@@ -11,21 +11,39 @@
     <title>FeedHub</title>
 </head>
 
-<body style="color: rgb(148, 148, 148);">
-    <div class="navbar-fixed">
-        <nav>
-            <div class="nav-wrapper blue">
-                <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img>
-                <ul id="nav-mobile" class="left hide-on-med-and-down">
-                    <li><a href="Conta.html">Conta</a></li>
-                    <li><a href="ContaLoja.html">Conta Loja</a></li>
-                    <li><a href="Index.html">Lojas</a></li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-   
+<nav class="#0d47a1 blue darken-4">
+    <img src="../Image/coollogo_com-5677198.png" class="brand-logo center" width="200"></img>
+</nav>
 
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background #0d47a1 blue darken-4">
+            </div>
+            <a href="#user"><img class="circle" src="../Image/usuario.avif"></a>
+            <a href="#name"><span class="white-text name">Neymar</span></a>
+            <a href="#email"><span class="white-text email">neymar@gmail.com</span></a>
+        </div>
+    </li>
+    <li><a href="../VIEW/Conta.html"><i class="material-icons">person</i>Conta</a></li>
+    <li><a href="../VIEW/Index.html"><i class="material-icons">store</i>Lojas</a></li>
+</ul>
+<a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons medium ">menu</i></a>
+<br>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Initialize sidenav
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+
+        // Initialize collapsible
+        var collapsibleElems = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(collapsibleElems);
+    });
+</script>
+
+<body class="#f5f5f5 grey lighten-4">
 
     <div class=" row container">
 
@@ -35,17 +53,87 @@
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
                 <i class="material-icons">close</i>
             </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l4">
+                <div class="card hoverable rounded-card">
+                    <div class="card-image">
+                        <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
+                    </div>
+                    <div class="card-content">
+                        <p>Descrição da Loja</p>
+                        </br>
+                        <div class="rating-wrapper">
+                            <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                        </div>
+                    </div>
+                    <div class="card-action center-align" style="font-size:large;">
+                        <a href="../VIEW/Avaliar.html">Avaliar</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable rounded-card">
+                    <div class="card-image">
+                        <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
+                    </div>
+                    <div class="card-content">
+                        <p>Descrição da Loja</p>
+                        </br>
+                        <div class="rating-wrapper">
+                            <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                        </div>
+                    </div>
+                    <div class="card-action center-align" style="font-size:large;">
+                        <a href="../VIEW/Avaliar.html">Avaliar</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col s12 m6 l4">
+                <div class="card hoverable rounded-card">
+                    <div class="card-image">
+                        <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
+                    </div>
+                    <div class="card-content">
+                        <p>Descrição da Loja</p>
+                        </br>
+                        <div class="rating-wrapper">
+                            <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                            <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
+                        </div>
+                    </div>
+                    <div class="card-action center-align" style="font-size:large;">
+                        <a href="../VIEW/Avaliar.html">Avaliar</a>
+                    </div>
+                </div>
+            </div>
+
 
         </div>
 
         <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
+            <div class="card hoverable rounded-card">
                 <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
+                    <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
                 </div>
-                <div class="card-content" style="color: black;">
+                <div class="card-content">
                     <p>Descrição da Loja</p>
-                    <br></br>
+                    </br>
                     <div class="rating-wrapper">
                         <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
@@ -53,10 +141,8 @@
                         <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
                     </div>
-
-                    <input type="hidden" value="">
                 </div>
-                <div class="card-action">
+                <div class="card-action center-align" style="font-size:large;">
                     <a href="../VIEW/Avaliar.html">Avaliar</a>
                 </div>
             </div>
@@ -64,13 +150,13 @@
 
 
         <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
+            <div class="card hoverable rounded-card">
                 <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
+                    <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
                 </div>
-                <div class="card-content" style="color: black;">
+                <div class="card-content">
                     <p>Descrição da Loja</p>
-                    <br></br>
+                    </br>
                     <div class="rating-wrapper">
                         <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
@@ -78,24 +164,21 @@
                         <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
                     </div>
-
-                    <input type="hidden" value="">
                 </div>
-                <div class="card-action">
+                <div class="card-action center-align" style="font-size:large;">
                     <a href="../VIEW/Avaliar.html">Avaliar</a>
                 </div>
             </div>
         </div>
 
-
         <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
+            <div class="card hoverable rounded-card">
                 <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
+                    <img src="../Image/loja.webp" class="responsive-img" alt="Loja">
                 </div>
-                <div class="card-content" style="color: black;">
+                <div class="card-content">
                     <p>Descrição da Loja</p>
-                    <br></br>
+                    </br>
                     <div class="rating-wrapper">
                         <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
@@ -103,96 +186,14 @@
                         <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
                         <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
                     </div>
-
-                    <input type="hidden" value="">
                 </div>
-                <div class="card-action">
-                    <a href="../VIEW/Avaliar.html">Avaliar</a>
-                </div>
-            </div>
-        </div>
-
-
-    </div>
-
-    <div class=" row container">
-        <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
-                <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
-                </div>
-                <div class="card-content" style="color: black;">
-                    <p>Descrição da Loja</p>
-                    <br></br>
-                    <div class="rating-wrapper">
-                        <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                    </div>
-
-                    <input type="hidden" value="">
-                </div>
-                <div class="card-action">
-                    <a href="../VIEW/Avaliar.html">Avaliar</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
-                <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
-                </div>
-                <div class="card-content" style="color: black;">
-                    <p>Descrição da Loja</p>
-                    <br></br>
-                    <div class="rating-wrapper">
-                        <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                    </div>
-
-                    <input type="hidden" value="">
-                </div>
-                <div class="card-action">
-                    <a href="../VIEW/Avaliar.html">Avaliar</a>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="col s12 m6 l4">
-            <div class="card" style="color: black;">
-                <div class="card-image">
-                    <img src="../Image/loja.webp" class="responsive-img material-boxed">
-                </div>
-                <div class="card-content" style="color: black;">
-                    <p>Descrição da Loja</p>
-                    <br></br>
-                    <div class="rating-wrapper">
-                        <img id="1" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="2" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="3" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="4" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                        <img id="5" src="https://i.imgur.com/8XXRUz2.png" width="20">
-                    </div>
-
-                    <input type="hidden" value="">
-                </div>
-                <div class="card-action">
+                <div class="card-action center-align" style="font-size:large;">
                     <a href="../VIEW/Avaliar.html">Avaliar</a>
                 </div>
             </div>
         </div>
 
     </div>
-
-
 
     <ul class="pagination center">
         <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
@@ -202,16 +203,16 @@
         <li class="waves-effect"><a href="#!">4</a></li>
         <li class="waves-effect"><a href="#!">5</a></li>
         <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-      </ul>
-   
-</body>
+    </ul>
 
-<footer class="page-footer blue">
-    <div class="footer-copyright">
-        <div class="container">
-            ©Copyright FeedHub - 2024
+    <footer class="page-footer #0d47a1 blue darken-4">
+        <div class="footer-copyright">
+            <div class="container">
+                ©Copyright FeedHub - 2024
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
+</body>
+ 
 </html>
